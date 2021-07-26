@@ -1,0 +1,29 @@
+.social-links-list-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.social-links-list-footer__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 44px;
+	height: 44px;
+	fill: var(--prime-white-color);
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		background-color: var(--link-logo-color);
+	}
+}
+
+.social-links-list-footer__item {
+	&:not(:last-child) {
+		margin-right: 10px;
+	}
+}

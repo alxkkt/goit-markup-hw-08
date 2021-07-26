@@ -1,0 +1,133 @@
+.modal-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-form__sign {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.15;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--primary-color);
+
+	margin-bottom: 12px;
+}
+
+.modal-form__input {
+	width: 100%;
+	height: 40px;
+
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	cursor: pointer;
+	padding: 12px 42px;
+
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:focus {
+		border-color: var(--link-logo-color);
+		outline: none;
+	}
+}
+
+.modal-form__label {
+	display: inline-flex;
+	margin-bottom: 4px;
+	margin-top: 10px;
+
+	color: var(--description-color);
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.01em;
+}
+
+.modal-form__input-icon {
+	position: absolute;
+	left: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	width: 18px;
+	height: 18px;
+	fill: var(--primary-color);
+
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	.modal-form-input:focus + & {
+		fill: var(--link-logo-color);
+	}
+}
+
+.modal-form__input-wrapper {
+	position: relative;
+}
+
+.modal-form__checkbox-wrapper {
+	position: relative;
+}
+
+.modal-form__comment-box {
+	resize: none;
+	padding: 12px 16px;
+	width: 100%;
+	height: 120px;
+
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	margin-top: 4px;
+	cursor: pointer;
+	margin-bottom: 20px;
+
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:focus {
+		outline: none;
+		border: 1px solid var(--link-logo-color);
+	}
+
+	&::placeholder {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.01em;
+		color: rgba(117, 117, 117, 0.5);
+	}
+}
+
+.modal-form__policy-label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+
+	color: var(--description-color);
+	margin-bottom: 30px;
+
+	&::before {
+		display: block;
+		content: "";
+
+		width: 16px;
+		height: 15px;
+		border: 2px solid var(--primary-color);
+		cursor: pointer;
+		margin-right: 10px;
+		border-radius: 2px;
+	}
+
+	.modal-form__checkbox:checked + &::before {
+		background: var(--link-logo-color) url(../img/icons/check.svg) no-repeat center;
+		border: var(--link-logo-color);
+	}
+}
+
+.modal-form__policy-link {
+	color: var(--link-logo-color);
+	text-decoration: underline;
+}
