@@ -1,6 +1,12 @@
 .social-links-list-footer {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+}
+
+.social-links-list-footer__item {
+	&:not(:last-child) {
+		margin-right: 10px;
+	}
 }
 
 .social-links-list-footer__link {
@@ -19,11 +25,5 @@
 	&:hover,
 	&:focus {
 		background-color: var(--link-logo-color);
-	}
-}
-
-.social-links-list-footer__item {
-	&:not(:last-child) {
-		margin-right: 10px;
 	}
 }

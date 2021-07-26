@@ -11,16 +11,6 @@
 // 	margin-bottom: 30px;
 // }
 
-// .advantages__icon {
-// 	display: flex;
-// 	max-width: 270px;
-// 	max-height: 120px;
-
-// 	padding: 25px 100px;
-// 	margin-bottom: 30px;
-// 	background-color: var(--team-dscrp-color);
-// }
-
 .advantages-list__item {
 	max-width: 450px;
 	margin-left: auto;
@@ -32,11 +22,12 @@
 }
 
 .advantages__icon {
-	margin-right: auto;
-	margin-left: auto;
+	display: flex;
+	justify-content: center;
 	max-width: 450px;
 
-	padding: 25px 190px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 
 	background-color: var(--team-dscrp-color);
 	border-radius: 4px;
