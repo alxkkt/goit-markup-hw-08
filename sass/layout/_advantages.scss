@@ -1,51 +1,46 @@
-.advantages-list {
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: -30px;
-	margin-bottom: -30px;
-}
+// .advantages-list {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	margin-left: -30px;
+// 	margin-bottom: -30px;
+// }
+
+// .advantages-list__item {
+// 	flex-basis: calc(100% / 4 - 30px);
+// 	margin-left: 30px;
+// 	margin-bottom: 30px;
+// }
+
+// .advantages__icon {
+// 	display: flex;
+// 	max-width: 270px;
+// 	max-height: 120px;
+
+// 	padding: 25px 100px;
+// 	margin-bottom: 30px;
+// 	background-color: var(--team-dscrp-color);
+// }
 
 .advantages-list__item {
-	flex-basis: calc(100% / 4 - 30px);
-	margin-left: 30px;
-	margin-bottom: 30px;
+	max-width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+
+	&:not(:last-child) {
+		margin-bottom: 30px;
+	}
 }
 
 .advantages__icon {
-	display: flex;
-	max-width: 270px;
-	max-height: 120px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 450px;
 
-	padding: 25px 100px;
-	margin-bottom: 30px;
+	padding: 25px 190px;
+
 	background-color: var(--team-dscrp-color);
+	border-radius: 4px;
 }
-
-/* .advantages::before {
-	display: block;
-	width: 270px;
-	height: 120px;
-	content: "";
-	background-color: var(--team-dscrp-color);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.antenna::before {
-	background-image: url(../img/icons/antenna.svg);
-}
-
-.clock::before {
-	background-image: url(../img/icons/clock.svg);
-}
-
-.diagram::before {
-	background-image: url(../img/icons/diagram.svg);
-}
-
-.astronaut::before {
-	background-image: url(../img/icons/astronaut.svg);
-} */
 
 .advantages__title {
 	color: var(--primary-color);
@@ -54,9 +49,10 @@
 	line-height: 1.14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	text-align: center;
 
 	margin-bottom: 10px;
-	margin-top: 0px;
+	margin-top: 30px;
 }
 
 .advantages__title-info {
@@ -64,6 +60,4 @@
 	font-size: 14px;
 	line-height: 2;
 	letter-spacing: 0.03em;
-
-	margin: 0;
 }

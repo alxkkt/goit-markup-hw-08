@@ -1,37 +1,37 @@
 .what-we-do__section {
-	padding-top: 0;
+	display: none;
 }
 
-.team-activity-list {
-	display: flex;
+// .team-activity-list {
+// 	display: flex;
 
-	margin-left: -30px;
-	margin-top: -30px;
-}
+// 	margin-left: -30px;
+// 	margin-top: -30px;
+// }
 
-.team-activity-list__item {
-	flex-basis: calc(100% / 3 - 30px);
-	margin-left: 30px;
-	margin-top: 30px;
-}
+// .team-activity-list__item {
+// 	flex-basis: calc(100% / 3 - 30px);
+// 	margin-left: 30px;
+// 	margin-top: 30px;
+// }
 
-.team-activity__thumb {
-	position: relative;
-}
+// .team-activity__thumb {
+// 	position: relative;
+// }
 
-.team-activity__thumb-description {
-	position: absolute;
-	bottom: 0%;
+// .team-activity__thumb-description {
+// 	position: absolute;
+// 	bottom: 0%;
 
-	color: var(--prime-white-color);
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.14;
-	text-align: center;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
+// 	color: var(--prime-white-color);
+// 	font-weight: 700;
+// 	font-size: 14px;
+// 	line-height: 1.14;
+// 	text-align: center;
+// 	letter-spacing: 0.03em;
+// 	text-transform: uppercase;
 
-	background-color: rgba(47, 48, 58, 0.8);
-	width: 100%;
-	padding: 27px;
-}
+// 	background-color: rgba(47, 48, 58, 0.8);
+// 	width: 100%;
+// 	padding: 27px;
+// }

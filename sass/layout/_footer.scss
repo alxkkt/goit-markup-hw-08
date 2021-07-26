@@ -3,18 +3,11 @@
 }
 
 .footer__container {
-	display: flex;
-	flex-direction: row;
-	align-items: baseline;
-
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
 
 .location {
-	display: inline-block;
-	margin-top: 0;
-
 	color: var(--prime-white-color);
 	font-size: 14px;
 	line-height: 1.71;
@@ -47,9 +40,6 @@
 	line-height: 1.14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	margin-bottom: 20px;
-}
 
-.footer-links {
-	margin-left: 70px;
+	margin-bottom: 20px;
 }
