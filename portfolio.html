@@ -17,17 +17,17 @@
     <!-- Header -->
         <header class="header">
             <div class="container header__container">
+                <a href="./index.html" class="logo logo__header">
+                    <span class="logo__prefix">Web</span>Studio
+                </a>
                 <nav class="navmenu">
-                    <a href="./index.html" class="logo logo__header">
-                        <span class="logo__prefix">Web</span>Studio
-                    </a>
                     <ul class="navmenu-list">
                         <li class="navmenu-list__item">
-                            <a href="./index.html" class="navmenu-list__link">Студия</a>
+                            <a href="./index.html" class="navmenu-list__link navmenu-list__link_current">Студия</a>
                         </li>
         
                         <li class="navmenu-list__item">
-                            <a href="./portfolio.html" class="navmenu-list__link navmenu-list__link_current">Портфолио</a>
+                            <a href="./portfolio.html" class="navmenu-list__link">Портфолио</a>
                         </li>
         
                         <li class="navmenu-list__item">
@@ -36,12 +36,19 @@
                     </ul>
                 </nav>
         
+                <button class="burger-btn" type="button" data-menu-open>
+                    <svg class="burger-btn__icon" width="40px" height="40px">
+                        <use href="./img/icons.svg#header-menu"></use>
+                    </svg>
+                </button>
+        
                 <ul class="contacts-header-list">
                     <li class="contacts-header-list__item">
                         <a href="mailto:info@devstudio.com" class="contacts-header-link">
                             <svg class="contacts-header-icon" width="16px" height="12px">
                                 <use href="./img/icons.svg#mail"></use>
-                            </svg>info@devstudio.com
+                            </svg>
+                            info@devstudio.com
                         </a>
                     </li>
         
@@ -49,10 +56,56 @@
                         <a href="tel:+380961111111" class="contacts-header-link">
                             <svg class="contacts-header-icon" width="10px" height="16px">
                                 <use href="./img/icons.svg#phone"></use>
-                            </svg>+38 096 111 11 11
+                            </svg>
+                            +38 096 111 11 11
                         </a>
                     </li>
                 </ul>
+            </div>
+        
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu__container">
+                    <button type="button" class="modal-window__close-button" data-menu-close>
+                        <svg class="modal-window__close-button-icon" width="40px" height="40px">
+                            <use href="./img/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                    <ul class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="./index.html" class="nav-list__link nav-list__link-current">Студия</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="./portfolio.html" class="nav-list__link">Портфолио</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="" class="nav-list__link">Контакты</a>
+                        </li>
+                    </ul>
+        
+                    <ul class="mobile-menu-contacts">
+                        <li class="mobile-menu-contacts__item">
+                            <a href="tel:+380961111111" class="mobile-menu-contacts__link-tel">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-menu-contacts__item">
+                            <a href="mailto:info@devstudio.com" class="mobile-menu-contacts__link-mail">info@devstudio.com</a>
+                        </li>
+                    </ul>
+        
+                    <ul class="mobile-menu-social-links">
+                        <li class="mobile-menu-social-links__item">
+                            <a href="" class="mobile-menu-social-links__link">Instagram</a>
+                        </li>
+                        <li class="mobile-menu-social-links__item">
+                            <a href="" class="mobile-menu-social-links__link">Twitter</a>
+                        </li>
+                        <li class="mobile-menu-social-links__item">
+                            <a href="" class="mobile-menu-social-links__link">Facebook</a>
+                        </li>
+                        <li class="mobile-menu-social-links__item">
+                            <a href="" class="mobile-menu-social-links__link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
 
@@ -227,10 +280,12 @@
         <!-- Footer -->
     <footer class="footer">
         <div class="container footer__container">
-            <div class="address">
-                <a href="./index.html" class="logo logo__footer"><span class="logo__prefix">Web</span><span
-                        class="logo__suffix">Studio</span></a>
-                <address>
+            <div class="footer-info">
+                <a href="./index.html" class="logo logo__footer">
+                    <span class="logo__prefix">Web</span>
+                    <span class="logo__suffix">Studio</span>
+                </a>
+                <address class="address">
                     <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
                     <a href="mailto:info@example.com" class="contacts-link-footer">info@example.com</a>
                     <a href="tel:+380991111111" class="contacts-link-footer">+38 099 111 11 11</a>
@@ -277,8 +332,9 @@
             <div class="footer-subscribe">
                 <form>
                     <label class="footer-subscribe__title" for="mail">подпишитесь на рассылку</label>
-                    <input type="text" name="mail" class="footer-subscribe__field" id="mail" placeholder="E-mail">
-                    <button class="button footer__button" type="submit">Подписаться
+                    <input type="text" name="mail" class="footer-subscribe__field" id="mail" placeholder="E-mail" />
+                    <button class="button footer__button" type="submit">
+                        Подписаться
                         <svg class="icon-send" width="24px" height="24px">
                             <use href="./img/icons.svg#send"></use>
                         </svg>
@@ -288,5 +344,6 @@
         </div>
     </footer>
 
+    <script src="./js/menu.js"></script>
 </body>
 </html>

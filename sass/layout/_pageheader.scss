@@ -142,6 +142,7 @@
 
 	.mobile-menu-social-links {
 		display: flex;
+		flex-wrap: wrap;
 		margin: 0 -10px;
 
 		&__item {
