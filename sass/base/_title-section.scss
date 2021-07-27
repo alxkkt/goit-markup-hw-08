@@ -8,8 +8,20 @@
 	padding-top: 116px;
 	padding-bottom: 116px;
 
-	background-color: #c4c4c4;
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg-image-mobile.jpg);
-	background-size: cover;
 	text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+	.title__section {
+		background-color: #c4c4c4;
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg-image-mobile.jpg);
+		background-size: cover;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.title__section {
+		max-width: 768px;
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg-image-tablet.jpg);
+	}
 }
