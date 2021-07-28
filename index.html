@@ -27,7 +27,7 @@
 				<nav class="navmenu">
 					<ul class="navmenu-list">
 						<li class="navmenu-list__item">
-							<a href="./index.html" class="navmenu-list__link navmenu-list__link_current">Студия</a>
+							<a href="./index.html" class="navmenu-list__link navmenu-list__link-current">Студия</a>
 						</li>
 
 						<li class="navmenu-list__item">
@@ -49,7 +49,7 @@
 				<ul class="contacts-header-list">
 					<li class="contacts-header-list__item">
 						<a href="mailto:info@devstudio.com" class="contacts-header-link">
-							<svg class="contacts-header-icon" width="16px" height="12px">
+							<svg class="contacts-header-icon__mail" width="16px" height="12px">
 								<use href="./img/icons.svg#mail"></use>
 							</svg>
 							info@devstudio.com
@@ -58,7 +58,7 @@
 
 					<li class="contacts-header-list__item">
 						<a href="tel:+380961111111" class="contacts-header-link">
-							<svg class="contacts-header-icon" width="10px" height="16px">
+							<svg class="contacts-header-icon__phone" width="10px" height="16px">
 								<use href="./img/icons.svg#phone"></use>
 							</svg>
 							+38 096 111 11 11
@@ -275,9 +275,23 @@
 						<li class="our-team__card">
 							<div>
 								<picture>
-									<source srcset="./img/studio/our-team/image1-desktop.jpg" media="(min-width: 1200px)" />
-									<source srcset="./img/studio/our-team/image1-tablet.jpg" media="(min-width: 768px)" />
-									<source srcset="./img/studio/our-team/image1-mobile.jpg" media="(max-width: 767px)" />
+									<source srcset="./img/studio/our-team/desktop/image1.webp 1x, ./img/studio/our-team/desktop/image1@2x.webp 2x"
+										media="(min-width: 1200px)" type="image/webp">
+									
+									<source srcset="./img/studio/our-team/desktop/image1.jpg 1x, ./img/studio/our-team/desktop/image1@2x.jpg 2x"
+										media="(min-width: 1200px)">
+									
+									<source srcset="./img/studio/our-team/tablet/image1.webp 1x, ./img/studio/our-team/tablet/image1@2x.webp 2x"
+										media="(min-width: 768px)" type="image/webp">
+									
+									<source srcset="./img/studio/our-team/tablet/image1.jpg 1x, ./img/studio/our-team/tablet/image1@2x.jpg 2x"
+										media="(min-width: 768px)">
+									
+									<source srcset="./img/studio/our-team/mobile/image1.webp 1x, ./img/studio/our-team/mobile/image1@2x.webp 2x"
+										media="(max-width: 767px)" type="image/webp">
+									
+									<source srcset="./img/studio/our-team/mobile/image1.jpg 1x, ./img/studio/our-team/mobile/image1@2x.jpg 2x"
+										media="(max-width: 767px)">
 									<img src="" alt="productmanager" />
 								</picture>
 							</div>
@@ -323,9 +337,23 @@
 						<li class="our-team__card">
 							<div>
 								<picture>
-									<source srcset="./img/studio/our-team/image2-desktop.jpg" media="(min-width: 1200px)" />
-									<source srcset="./img/studio/our-team/image2-tablet.jpg" media="(min-width: 768px)" />
-									<source srcset="./img/studio/our-team/image2-mobile.jpg" media="(max-width: 767px)" />
+									<source srcset="./img/studio/our-team/desktop/image2.webp 1x, ./img/studio/our-team/desktop/image2@2x.webp 2x"
+										media="(min-width: 1200px)" type="image/webp">
+									
+									<source srcset="./img/studio/our-team/desktop/image2.jpg 1x, ./img/studio/our-team/desktop/image2@2x.jpg 2x"
+										media="(min-width: 1200px)">
+									
+									<source srcset="./img/studio/our-team/tablet/image2.webp 1x, ./img/studio/our-team/tablet/image2@2x.webp 2x"
+										media="(min-width: 768px)" type="image/webp">
+									
+									<source srcset="./img/studio/our-team/tablet/image2.jpg 1x, ./img/studio/our-team/tablet/image2@2x.jpg 2x"
+										media="(min-width: 768px)">
+									
+									<source srcset="./img/studio/our-team/mobile/image2.webp 1x, ./img/studio/our-team/mobile/image2@2x.webp 2x"
+										media="(max-width: 767px)" type="image/webp">
+									
+									<source srcset="./img/studio/our-team/mobile/image2.jpg 1x, ./img/studio/our-team/mobile/image2@2x.jpg 2x"
+										media="(max-width: 767px)">
 									<img src="" alt="frontenddeveloper" />
 								</picture>
 							</div>
@@ -371,9 +399,23 @@
 						<li class="our-team__card">
 							<div>
 								<picture>
-									<source srcset="./img/studio/our-team/image3-desktop.jpg" media="(min-width: 1200px)" />
-									<source srcset="./img/studio/our-team/image3-tablet.jpg" media="(min-width: 768px)" />
-									<source srcset="./img/studio/our-team/image3-mobile.jpg" media="(max-width: 767px)" />
+									<source srcset="./img/studio/our-team/desktop/image3.webp 1x, ./img/studio/our-team/desktop/image3@2x.webp 2x"
+										media="(min-width: 1200px)" type="image/webp">
+									
+									<source srcset="./img/studio/our-team/desktop/image3.jpg 1x, ./img/studio/our-team/desktop/image3@2x.jpg 2x"
+										media="(min-width: 1200px)">
+									
+									<source srcset="./img/studio/our-team/tablet/image3.webp 1x, ./img/studio/our-team/tablet/image3@2x.webp 2x"
+										media="(min-width: 768px)" type="image/webp">
+									
+									<source srcset="./img/studio/our-team/tablet/image3.jpg 1x, ./img/studio/our-team/tablet/image3@2x.jpg 2x"
+										media="(min-width: 768px)">
+									
+									<source srcset="./img/studio/our-team/mobile/image3.webp 1x, ./img/studio/our-team/mobile/image3@2x.webp 2x"
+										media="(max-width: 767px)" type="image/webp">
+									
+									<source srcset="./img/studio/our-team/mobile/image3.jpg 1x, ./img/studio/our-team/mobile/image3@2x.jpg 2x"
+										media="(max-width: 767px)">
 									<img src="" alt="marketing" />
 								</picture>
 							</div>
@@ -419,9 +461,23 @@
 						<li class="our-team__card">
 							<div>
 								<picture>
-									<source srcset="./img/studio/our-team/image4-desktop.jpg" media="(min-width: 1200px)" />
-									<source srcset="./img/studio/our-team/image4-tablet.jpg" media="(min-width: 768px)" />
-									<source srcset="./img/studio/our-team/image4-mobile.jpg" media="(max-width: 767px)" />
+									<source srcset="./img/studio/our-team/desktop/image4.webp 1x, ./img/studio/our-team/desktop/image4@2x.webp 2x"
+										media="(min-width: 1200px)" type="image/webp">
+									
+									<source srcset="./img/studio/our-team/desktop/image4.jpg 1x, ./img/studio/our-team/desktop/image4@2x.jpg 2x"
+										media="(min-width: 1200px)">
+									
+									<source srcset="./img/studio/our-team/tablet/image4.webp 1x, ./img/studio/our-team/tablet/image4@2x.webp 2x"
+										media="(min-width: 768px)" type="image/webp">
+									
+									<source srcset="./img/studio/our-team/tablet/image4.jpg 1x, ./img/studio/our-team/tablet/image4@2x.jpg 2x"
+										media="(min-width: 768px)">
+									
+									<source srcset="./img/studio/our-team/mobile/image4.webp 1x, ./img/studio/our-team/mobile/image4@2x.webp 2x"
+										media="(max-width: 767px)" type="image/webp">
+									
+									<source srcset="./img/studio/our-team/mobile/image4.jpg 1x, ./img/studio/our-team/mobile/image4@2x.jpg 2x"
+										media="(max-width: 767px)">
 									<img src="" alt="uidesigner" />
 								</picture>
 							</div>

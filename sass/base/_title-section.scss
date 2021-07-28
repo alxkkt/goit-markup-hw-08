@@ -1,27 +1,76 @@
-// .title__section {
-// 	max-width: 1600px;
-
 .title__section {
-	max-width: 480px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 116px;
-	padding-bottom: 116px;
+	padding-top: 118px;
+	padding-bottom: 118px;
 
 	text-align: center;
 }
 
+// 0 - 767px
 @media screen and (max-width: 767px) {
 	.title__section {
+		max-width: 480px;
 		background-color: #c4c4c4;
-		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg-image-mobile.jpg);
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg/bg-mobile.jpg);
 		background-size: cover;
 	}
 }
 
-@media screen and (min-width: 768px) {
+// drp2 and 0 - 767px
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+	screen and (min-resolution: 192dpi) and (max-width: 767px),
+	screen and(min-resolution: 2dppx) and (max-width: 767px) {
+	.title__section {
+		max-width: 480px;
+		background-color: #c4c4c4;
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg/bg-mobile@2x.jpg);
+		background-size: cover;
+	}
+}
+
+// 767px - 1199px
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 	.title__section {
 		max-width: 768px;
-		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg-image-tablet.jpg);
+		background-color: #c4c4c4;
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg/bg-tablet.jpg);
+		background-size: cover;
+	}
+}
+
+// drp2 and 767px - 1199px
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px),
+	screen and (min-resolution: 192dpi) and (max-width: 1199px),
+	screen and(min-resolution: 2dppx) and (max-width: 1199px) {
+	.title__section {
+		max-width: 768px;
+		background-color: #c4c4c4;
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg/bg-tablet@2x.jpg);
+		background-size: cover;
+	}
+}
+
+// 1200+
+@media screen and (min-width: 1200px) {
+	.title__section {
+		max-width: 1200px;
+		background-color: #c4c4c4;
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg/bg-desktop.jpg);
+		background-size: cover;
+
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+	screen and (min-resolution: 192dpi) and (min-width: 1200px),
+	screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+	.title__section {
+		max-width: 1200px;
+		background-color: #c4c4c4;
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg/bg-desktop@2x.jpg);
+		background-size: cover;
 	}
 }

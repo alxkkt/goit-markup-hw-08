@@ -6,10 +6,18 @@
 	padding-right: 15px;
 }
 
+// 480+
 @media screen and (min-width: 480px) {
 	.container {
 		width: 480px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+}
+
+// 768+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 768px;
 	}
 }
