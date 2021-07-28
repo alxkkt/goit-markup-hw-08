@@ -31,3 +31,10 @@
 		margin-bottom: 20px;
 	}
 }
+
+// 1200px+
+@media screen and (min-width: 1200px) {
+	.logo__footer {
+		display: block;
+	}
+}

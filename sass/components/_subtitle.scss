@@ -6,3 +6,10 @@
 
 	margin-bottom: 30px;
 }
+
+// 1200px+
+@media screen and (min-width: 1200px) {
+	.subtitle {
+		margin-bottom: 50px;
+	}
+}

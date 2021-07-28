@@ -52,10 +52,6 @@
 		}
 	}
 
-	.advantages__icon {
-		max-width: 450px;
-	}
-
 	.advantages__title {
 		text-align: center;
 	}
@@ -75,8 +71,11 @@
 		margin-left: 30px;
 		margin-bottom: 30px;
 	}
+}
 
-	.advantages__icon {
-		max-width: 354px;
+// 1200px+
+@media screen and (min-width: 1200px) {
+	.advantages-list__item {
+		flex-basis: calc(100% / 4 - 30px);
 	}
 }

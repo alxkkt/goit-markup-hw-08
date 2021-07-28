@@ -26,3 +26,10 @@
 		background-color: var(--link-logo-color);
 	}
 }
+
+// 1200px+
+@media screen and (min-width: 1200px) {
+	.social-links-list-footer {
+		justify-content: flex-start;
+	}
+}

@@ -42,3 +42,17 @@
 		color: rgba(255, 255, 255, 0.6);
 	}
 }
+
+// 1200px+
+@media screen and (min-width: 1200px) {
+	.footer-subscribe__title {
+		text-align: left;
+	}
+
+	.footer-subscribe__field {
+		width: 358px;
+		height: 50px;
+
+		margin-bottom: 0;
+	}
+}

@@ -106,3 +106,29 @@
 		margin-top: 8px;
 	}
 }
+
+// 1200px+
+@media screen and (min-width: 1200px) {
+	.footer-info {
+		display: block;
+		width: 25%;
+	}
+
+	.footer-links {
+		display: block;
+		width: 25%;
+	}
+
+	.footer-links__title {
+		text-align: left;
+	}
+
+	.footer-subscribe {
+		display: flex;
+		width: 50%;
+	}
+
+	.address {
+		display: block;
+	}
+}

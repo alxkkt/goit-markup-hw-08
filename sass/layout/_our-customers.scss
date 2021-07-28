@@ -45,9 +45,16 @@
 	}
 }
 
-// 768px -
+// 768px - 1199px
 @media screen and (min-width: 768px) {
 	.customers-list__item {
 		flex-basis: calc(100% / 3 - 30px);
+	}
+}
+
+// 1200px+
+@media screen and (min-width: 1200px) {
+	.customers-list__item {
+		flex-basis: calc(100% / 6 - 30px);
 	}
 }

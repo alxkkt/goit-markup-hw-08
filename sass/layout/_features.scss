@@ -33,7 +33,7 @@
 	height: 101%;
 	overflow: auto;
 
-	padding: 77px 24px;
+	padding: 60px 24px;
 	background-color: rgba(33, 150, 243, 0.9);
 	color: var(--prime-white-color);
 	font-weight: 400;
@@ -85,13 +85,19 @@
 		}
 	}
 }
-// }
 
-// .features-list__card-link {
-// 	display: block;
+// 1200px+
+@media screen and (min-width: 1200px) {
+	.features-list__card {
+		flex-basis: calc(100% / 3 - 30px);
+	}
 
-// 	&:hover .overlay,
-// 	&:focus .overlay {
-// 		transform: translateY(0%);
-// 	}
-// }
+	.features-list__card-link {
+		display: block;
+
+		&:hover .overlay,
+		&:focus .overlay {
+			transform: translateY(0%);
+		}
+	}
+}
