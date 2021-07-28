@@ -3,7 +3,7 @@
 }
 
 .card-content {
-	padding: 20px 24px;
+	padding: 20px 18px;
 
 	border: 1px solid #eeeeee;
 	border-top: none;
@@ -50,6 +50,15 @@
 	overflow: hidden;
 }
 
+.features-list__card-link {
+	display: block;
+
+	&:hover .overlay,
+	&:focus .overlay {
+		transform: translateY(0%);
+	}
+}
+
 // 0 - 767px
 @media screen and (max-width: 767px) {
 	.features-list__card-link {
@@ -90,14 +99,5 @@
 @media screen and (min-width: 1200px) {
 	.features-list__card {
 		flex-basis: calc(100% / 3 - 30px);
-	}
-
-	.features-list__card-link {
-		display: block;
-
-		&:hover .overlay,
-		&:focus .overlay {
-			transform: translateY(0%);
-		}
 	}
 }
