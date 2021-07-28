@@ -114,6 +114,10 @@
 		width: 25%;
 	}
 
+	.address {
+		display: block;
+	}
+
 	.footer-links {
 		display: block;
 		width: 25%;
@@ -126,9 +130,10 @@
 	.footer-subscribe {
 		display: flex;
 		width: 50%;
-	}
+		margin-top: 0;
 
-	.address {
-		display: block;
+		&__form {
+			display: flex;
+		}
 	}
 }

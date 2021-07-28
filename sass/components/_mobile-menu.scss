@@ -28,11 +28,12 @@
 		pointer-events: auto;
 	}
 
-	.modal-window__close-button {
+	.mobile-menu__close-button {
 		position: fixed;
 		top: 10px;
 		right: 15px;
 		border: none;
+		background-color: transparent;
 
 		width: 40px;
 		height: 40px;
@@ -42,7 +43,7 @@
 		}
 	}
 
-	.modal-window__close-button-icon {
+	.mobile-menu__close-button-icon {
 		fill: currentColor;
 	}
 
